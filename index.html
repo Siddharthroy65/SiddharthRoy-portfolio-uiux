@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Siddharth Roy — Senior Product & UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Cursor Glow & Dot -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-avatar">SR</span>
+        <span class="brand-name">Siddharth Roy</span>
+      </a>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="#work" class="nav-link active">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#ai-lab" class="nav-link">AI Lab</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch visual theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow blob-1"></div>
+      <div class="hero-bg-glow blob-2"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="badge hero-badge">
+            <span class="pulse-indicator"></span> Available for Senior UI/UX & Product Roles
+          </div>
+          <h1 class="hero-headline">
+            Architecting <span class="text-gradient">complex systems</span> into frictionless digital experiences.
+          </h1>
+          <p class="hero-desc">
+            5+ years designing enterprise SaaS, mission-critical operations portals, and consumer mobile apps. Grounded in user research, design token architectures, and high-fidelity interaction design.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary magnetic">Explore Case Studies ↓</a>
+            <a href="#about" class="btn btn-glass magnetic">About My Craft ↗</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="5">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">Design + Code</span>
+              <span class="stat-label">End-to-End UI Delivery</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">AI-Assisted</span>
+              <span class="stat-label">UI Exploration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Hero Stage -->
+        <div class="hero-visual reveal">
+          <div class="hero-3d-stage tilt-target">
+            <div class="mockup-browser-3d">
+              <div class="window-bar">
+                <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="window-address">https://designsystem.enterprise.io/tokens</div>
+              </div>
+              <div class="browser-hero-inner">
+                <div class="kpi-banner">
+                  <div class="kpi-box">
+                    <span>Design Focus</span>
+                    <strong>Clearer Flows</strong>
+                  </div>
+                  <div class="kpi-box">
+                    <span>Implementation</span>
+                    <strong class="text-cyan">Responsive UI</strong>
+                  </div>
+                </div>
+                <div class="graph-bars">
+                  <div class="bar" style="--h: 45%"></div>
+                  <div class="bar" style="--h: 70%"></div>
+                  <div class="bar" style="--h: 95%"></div>
+                  <div class="bar" style="--h: 60%"></div>
+                  <div class="bar" style="--h: 100%"></div>
+                  <div class="bar" style="--h: 80%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Overlapping Floating Mobile Mockup -->
+            <div class="mockup-phone-floating">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen-content">
+                <div class="mock-card">
+                  <span class="mock-tag">Active Order</span>
+                  <strong>#EXP-90241</strong>
+                </div>
+                <div class="mock-circle"></div>
+              </div>
+            </div>
+
+            <div class="badge-tag float-badge-1">⚡ Design Tokens</div>
+            <div class="badge-tag float-badge-2">🎯 Enterprise Scalability</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT FILTER BAR -->
+    <div class="filter-sticky-wrapper">
+      <div class="container">
+        <nav class="project-filters" role="tablist" aria-label="Project filter categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+          <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile Apps</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Platforms</button>
+          <button class="filter-btn" data-filter="dashboard" role="tab" aria-selected="false">Dashboards</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI & Innovation</button>
+          <div class="filter-indicator" aria-hidden="true"></div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- WORK SECTION -->
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-subtitle">Selected Work</span>
+          <h2 class="section-title">Digital Products & Interface Design</h2>
+          <p class="section-desc">Mobile apps, web platforms and enterprise dashboards, each shown on the device it was designed for.</p>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+          <!-- 09. AI & INNOVATION: Cognitive Attention Map -->
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-media-wrap">
+              <div class="ai-mockup-wrap tilt-target">
+                <div class="ai-glow-orb"></div>
+                <div class="ai-visual-shell">
+                  <div class="ai-card-badge">✦ AI-ASSISTED UI CONCEPT</div>
+                  <div class="heat-canvas">
+                    <div class="heat-spot spot-primary"></div>
+                    <div class="heat-spot spot-secondary"></div>
+                  </div>
+                  <div class="ai-data-readout">
+                    <span>Prompt-led exploration</span>
+                    <span>Human review: <strong>Required</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">AI Generative UX</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Research Tool</span>
+              </div>
+              <h3 class="project-heading">Cognitive UX — AI Pre-Release Usability Heatmap</h3>
+              <p class="project-summary">
+                An exploratory concept for reviewing visual hierarchy in interface drafts. This is a design concept, not a validated eye-tracking or predictive model.
+              </p>
+              <div class="project-meta-list">
+                <div class="meta-item"><strong>Concept</strong> AI-assisted exploration</div>
+                <div class="meta-item"><strong>Review</strong> Designer-led evaluation</div>
+              </div>
+              <span class="view-link" aria-label="Concept preview only">Concept Preview <span class="arrow">↗</span></span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual-col reveal">
+            <div class="portrait-stage">
+              <div class="portrait-ambient-glow"></div>
+              <div class="portrait-frame">
+                <img src="images/profile.jpg" alt="Siddharth Roy portrait" loading="lazy">
+              </div>
+              <div class="portrait-floating-chip chip-left">
+                <span class="chip-number">5+</span>
+                <span class="chip-desc">Years in Product</span>
+              </div>
+              <div class="portrait-floating-chip chip-right">
+                <span class="chip-number">Enterprise</span>
+                <span class="chip-desc">Design Specialist</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content-col reveal">
+            <span class="section-subtitle">About The Designer</span>
+            <h2 class="about-headline">I translate high-friction business operations into human-centric software.</h2>
+            <p class="about-text">
+              I am <strong>Siddharth Roy</strong>, a UI/UX Designer with hands-on frontend development experience. I focus on business clarity, information architecture, responsive interfaces, and consistent design systems.
+            </p>
+            <p class="about-text">
+              Over 5+ years, I have contributed to enterprise web applications, operational dashboards, workflow tools, and consumer-facing digital experiences. I combine interface design with hands-on frontend implementation and use AI-assisted tools to explore concepts and accelerate early-stage prototyping.
+            </p>
+
+            <div class="about-bullet-points">
+              <div class="bullet-card">
+                <div class="bullet-icon">📐</div>
+                <div>
+                  <h4>Design Token Architecture</h4>
+                  <p>Building scalable variables for multi-brand, multi-theme enterprise design systems.</p>
+                </div>
+              </div>
+              <div class="bullet-card">
+                <div class="bullet-icon">🔍</div>
+                <div>
+                  <h4>Evidence-Based UX Research</h4>
+                  <p>Uncovering friction through task-flow audits, cognitive walkthroughs, and usability analytics.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary magnetic">Start a Conversation ↗</a>
+              <a href="mailto:siddharthroy65@gmail.com?subject=Request%20for%20Portfolio%20Resume" class="btn btn-glass magnetic">Request Resume PDF ↓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TOOLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-subtitle">Core Capabilities</span>
+          <h2 class="section-title">Design Ecosystem & Technical Stack</h2>
+          <p class="section-desc">Tools and engineering methods leveraged daily to take products from ambiguous briefs to scaled reality.</p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Category 1 -->
+          <div class="skill-category-box reveal">
+            <div class="category-icon">🎨</div>
+            <h3>Product & Interaction Design</h3>
+            <p class="category-desc">Interface architecture, component hierarchies, and interactive micro-behavior.</p>
+            <div class="pill-group">
+              <span class="skill-pill">Figma (Variables/AutoLayout)</span>
+              <span class="skill-pill">Design Systems</span>
+              <span class="skill-pill">Information Architecture</span>
+              <span class="skill-pill">Wireframing</span>
+              <span class="skill-pill">Interactive Prototyping</span>
+              <span class="skill-pill">User Flows &amp; Journey Mapping</span>
+              <span class="skill-pill">Usability Testing</span>
+              <span class="skill-pill">Design Tokens</span>
+              <span class="skill-pill">FigJam / Miro</span>
+              <span class="skill-pill">Framer</span>
+              <span class="skill-pill">ProtoPie</span>
+              <span class="skill-pill">Micro-interactions</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category-box reveal">
+            <div class="category-icon">⚙️</div>
+            <h3>Technical Grounding</h3>
+            <p class="category-desc">Deep technical empathy for developer handoffs and production constraints.</p>
+            <div class="pill-group">
+              <span class="skill-pill">HTML5 / Modern Pure CSS</span>
+              <span class="skill-pill">Responsive Flex & Grid</span>
+              <span class="skill-pill">CSS Custom Variables</span>
+              <span class="skill-pill">WCAG 2.1 Accessibility</span>
+              <span class="skill-pill">Design-to-Code Audits</span>
+              <span class="skill-pill">Dev Mode Handoff</span>
+              <span class="skill-pill">Storybook Component Docs</span>
+              <span class="skill-pill">JavaScript Basics</span>
+              <span class="skill-pill">Git &amp; GitHub</span>
+              <span class="skill-pill">Chrome DevTools</span>
+              <span class="skill-pill">Lottie Animations</span>
+              <span class="skill-pill">Component States</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category-box reveal">
+            <div class="category-icon">🧠</div>
+            <h3>AI-Assisted Workflow</h3>
+            <p class="category-desc">Accelerating ideation, prompt-engineering, and visual explorations.</p>
+            <div class="pill-group">
+              <span class="skill-pill">Midjourney</span>
+              <span class="skill-pill">Lovable</span>
+              <span class="skill-pill">Bolt.new</span>
+              <span class="skill-pill">Uizard</span>
+              <span class="skill-pill">Relume</span>
+              <span class="skill-pill">Attention Insight</span>
+              <span class="skill-pill">Figma AI</span>
+              <span class="skill-pill">Google Stitch</span>
+              <span class="skill-pill">v0 by Vercel</span>
+              <span class="skill-pill">Galileo AI</span>
+              <span class="skill-pill">Visily</span>
+              <span class="skill-pill">ChatGPT</span>
+              <span class="skill-pill">Claude</span>
+              <span class="skill-pill">GitHub Copilot</span>
+              <span class="skill-pill">Cursor</span>
+              <span class="skill-pill">Magic Patterns</span>
+              <span class="skill-pill">Adobe Firefly</span>
+              <span class="skill-pill">Runway</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section exp-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-subtitle">Career Journey</span>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-spine"></div>
+
+          <!-- Role 1 -->
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot current"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">UI/UX Designer</h3>
+                  <div class="company-name">Vidya Online Services</div>
+                </div>
+                <span class="time-badge">Jun 2025 — Present</span>
+              </div>
+              <p class="role-desc">
+                Designing and developing enterprise web interfaces, translating business requirements into responsive user experiences while respecting client confidentiality.
+              </p>
+              <div class="role-tags">
+                <span>Enterprise UI</span><span>Responsive Design</span><span>Frontend Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">UI/UX Designer (Consultant)</h3>
+                  <div class="company-name">Quess Corp</div>
+                </div>
+                <span class="time-badge">Jan 2024 — Jun 2025</span>
+              </div>
+              <p class="role-desc">
+                Designed enterprise web and mobile interfaces for procurement, logistics, and operational workflows, collaborating with cross-functional teams to improve clarity and usability.
+              </p>
+              <div class="role-tags">
+                <span>Mobile APK</span><span>Procurement Hub</span><span>Logistics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">UI/UX Designer (Consultant)</h3>
+                  <div class="company-name">Rigved Technologies</div>
+                </div>
+                <span class="time-badge">Dec 2022 — Dec 2023</span>
+              </div>
+              <p class="role-desc">
+                Designed interfaces for inventory, warehouse, production, and operational management applications, focusing on information hierarchy and efficient task completion.
+              </p>
+              <div class="role-tags">
+                <span>Enterprise Workflows</span><span>Dashboard UI</span><span>Data Tables</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">UI/UX Developer</h3>
+                  <div class="company-name">SAITS India Pvt. Ltd.</div>
+                </div>
+                <span class="time-badge">Sep 2020 — Nov 2022</span>
+              </div>
+              <p class="role-desc">
+                Created responsive SaaS web applications, booking funnels, and component libraries across healthcare, e-commerce, and commercial aviation domains.
+              </p>
+              <div class="role-tags">
+                <span>SaaS Web</span><span>Design-to-Code</span><span>Responsive UI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AI LAB PLAYGROUND -->
+    <section class="section ai-lab-section" id="ai-lab">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-subtitle">Innovation Lab</span>
+          <h2 class="section-title">Generative AI Tools & Prototypes</h2>
+          <p class="section-desc">Practical experiments merging intelligent generative pipelines into daily user experience design.</p>
+        </div>
+
+        <div class="ai-cards-grid">
+          <div class="ai-tool-card reveal">
+            <div class="ai-badge">PROMPT LAB</div>
+            <h3>Design System Tokenizer</h3>
+            <p>An AI-assisted prompt workflow concept for exploring color direction, typography choices, and reusable interface tokens. Final choices require designer review and accessibility checks.</p>
+            <div class="card-status"><span>Ready to test</span></div>
+          </div>
+
+          <div class="ai-tool-card reveal">
+            <div class="ai-badge">COMPUTER VISION</div>
+            <h3>Predictive Attention Heatmaps</h3>
+            <p>Explores how AI-generated feedback could support a designer-led review of visual hierarchy. No validated gaze model or measured accuracy is claimed.</p>
+            <div class="card-status"><span>Concept only</span></div>
+          </div>
+
+          <div class="ai-tool-card reveal">
+            <div class="ai-badge">AUTOMATION</div>
+            <h3>Microcopy Tone Synthesizer</h3>
+            <p>Explores alternative button labels, helper text, and error messages for enterprise and consumer interfaces; final copy is reviewed for clarity and context.</p>
+            <div class="card-status"><span>Utility Tool</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <span class="section-subtitle">Let's Build Something Exceptional</span>
+          <h2 class="contact-headline">Open to Senior UI/UX Designer and Product Designer opportunities.</h2>
+          <p class="contact-subtext">Whether it is untangling complex enterprise workflows or designing an intuitive consumer product from 0 to 1, let's talk.</p>
+
+          <div class="contact-links-grid">
+            <a href="mailto:siddharthroy65@gmail.com" class="contact-card-pill">
+              <span class="pill-icon">✉️</span>
+              <div class="pill-details">
+                <span class="pill-meta">Email Me Directly</span>
+                <span class="pill-val">siddharthroy65@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919518781914" class="contact-card-pill">
+              <span class="pill-icon">📞</span>
+              <div class="pill-details">
+                <span class="pill-meta">Phone / WhatsApp</span>
+                <span class="pill-val">+91 95187 81914</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/siddharth-roy-5ba628144/" target="_blank" rel="noopener noreferrer" class="contact-card-pill">
+              <span class="pill-icon">💼</span>
+              <div class="pill-details">
+                <span class="pill-meta">LinkedIn</span>
+                <span class="pill-val">Connect on LinkedIn ↗</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">© 2026 Siddharth Roy. Crafted with intent, performance, and clean code.</div>
+      <div class="footer-back-to-top">
+        <a href="#hero" class="back-link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
